@@ -1,0 +1,15 @@
+function getElementById(id) {
+    // Get all elements in the document
+    var elements = document.getElementsByTagName("*");
+
+    // Iterate over all elements
+    for (var i = 0; i < elements.length; i++) {
+        // Check if the id of the current element matches the given id
+        if (elements[i].id == id) {
+            // If it does, return the element
+            return elements[i];
+        }
+    }
+    // If no element with a matching id is found, return null
+    return null;
+}
